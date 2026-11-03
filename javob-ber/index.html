@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>Kim javob beradi?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <!-- Barcha doiralar shu yerda chiziladi -->
+  <canvas id="cv"></canvas>
+ 
+  <!-- Tepadagi yozuv: hozir nima qilish kerakligini aytadi -->
+  <p id="status"></p>
+ 
+  <!-- 1) Boshlang‘ich ekran -->
+  <section id="intro">
+    <h1>Kim javob beradi?</h1>
+    <p>Hamma bitta barmog‘ini ekranga qo‘ysin va qo‘yib turing.<br>Qolganini o‘zim hal qilaman.</p>
+    <button id="startBtn">Boshlash</button>
+    <small>Kompyuterda barmoq o‘rniga sichqoncha bilan bosib doira qo‘yiladi.</small>
+  </section>
+ 
+  <!-- 2) Tanlanganda chiqadigan savol kartasi -->
+  <section id="card">
+    <p id="who"></p>
+    <p id="task">Endi savolga javob ber!</p>
+    <p id="oath">Aldasang, Xudo ursin!</p>
+    <div class="row-btns">
+      <button id="againBtn" class="main">Qayta o‘ynash</button>
+    </div>
+  </section>
+ 
+  <!-- 3) Yuqori o‘ngdagi tugmalar -->
+  <div class="top">
+    <button id="musicBtn">Musiqa: yoqilgan</button>
+    <button id="setBtn">Sozlamalar</button>
+  </div>
+ 
+  <!-- 4) Sozlamalar -->
+  <aside id="panel" class="hidden">
+    <h3>O‘yin</h3>
+    <label class="row">Hisoblash vaqti: <b id="delayV">5</b> s
+      <input id="delayR" type="range" min="3" max="10" step="1" value="5"></label>
+    <label class="row">Tanlanuvchilar: <b id="winV">1</b> ta
+      <input id="winR" type="range" min="1" max="3" step="1" value="1"></label>
+    <label class="row">Tebranish <input id="vibC" type="checkbox" checked></label>
+ 
+    <h3>Ko‘rinish</h3>
+    <label class="row">Doira kattaligi <input id="sizeR" type="range" min="0.7" max="1.5" step="0.05" value="1"></label>
+    <label class="row">Fon rangi <input id="cBg" type="color" value="#0b0a1a"></label>
+    <div class="presets" id="presets"></div>
+ 
+    <h3>Musiqa</h3>
+    <label class="row">Ovoz <input id="volR" type="range" min="0" max="1" step="0.05" value="0.5"></label>
+ 
+    <p class="foot">Yaratuvchi: Shukhurullayev_Firdavs <span>♥</span></p>
+  </aside>
+ 
+  <div class="credit">Yaratuvchi: Shukhurullayev_Firdavs <span>♥</span></div>
+ 
+  <script src="css/js/script.js"></script>
+</body>
+</html>
+ 
